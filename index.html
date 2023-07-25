@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <title>Review System App</title>
+  </head>
+  <body>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <span class="navbar-brand text-center text-warning h1 m-0 w-100">
+          Review System App
+        </span>
+      </div>
+    </nav>
+
+    <!-- From Section -->
+
+    <div class="container p-5">
+      <form>
+        <select name="rating" id="rating" class="form-control">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <textarea
+          placeholder="Enter Your Review..."
+          id="review"
+          class="form-control mt-3"
+        ></textarea>
+        <button class="btn btn-warning w-100 mt-3">Save Review</button>
+      </form>
+
+      <!-- Review List -->
+
+      <ul class="list-group mt-3"></ul>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
